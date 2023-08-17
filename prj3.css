@@ -1,0 +1,372 @@
+/* Reset some default styles */
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background-color: #000;
+}
+
+.site-title {
+  font-family:  'Playfair Display', serif;
+  font-size: 38px;
+  color: rgb(183, 183, 183);
+  letter-spacing: 6.8px;
+  transition: 0.9s;
+}
+
+.site-title:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.site-description {
+  font-family: "Open Sans", sans-serif; 
+  font-size: 12px;
+  color: rgb(183, 183, 183);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+  color: #fff;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: red;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-toggler  {
+  padding: 0;
+  border: none;
+  margin: 0;
+  color: #fff;
+}
+.navbar .navbar-toggler-icon {
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+}
+.Menu-label{
+  color: #fff;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+.navbar-collapse {
+  justify-content: center;
+}
+
+.dropdown-menu {
+  width: 150px; /* Adjust the width */
+  min-width: auto; /* Disable Bootstrap's default min-width */
+ 
+  align-items: left;
+}
+.dropdown-item {
+  height: 25px;
+  transition: background-color 0.3s ease-in-ot, color 0.3s ease-in-out;
+  color: #fff;
+  padding: 0;
+  margin: 0
+}
+.dropdown-item:hover {
+  color: red;
+  background-color: #000;
+}
+
+/* Adjust dropdown size for smaller screens */
+@media (max-width: 768px) {
+  .dropdown-menu {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+.content {
+  width: 1203px;
+  height: 1130px;
+  padding: 61px, 30px;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background-color: #000;
+}
+
+.subheading-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+.subheading {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-family:  'Playfair Display', serif;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+.image-container {
+  padding-left: 50px;
+  background-color: #000;
+  display: flex;
+  padding-right: 30px;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Decrease space between columns */
+.image-container .row {
+  margin-left: 40px;
+  margin-right: 40px; /* Negative margin to counteract column padding */
+}
+
+.image-container .col-md-6 {
+  padding: 10px;
+}
+
+.responsive-subheading {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+.subheading-responsive {
+  font-size: 24px;
+  color: #fff;
+  font-family:  'Playfair Display', serif;
+}
+
+.paragraphs-container {
+  padding: 20px;
+  background-color: #000;
+}
+
+.responsive-paragraph {
+  font-size: 18px;
+  color: #333;
+  line-height: 31px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(122, 122, 122);
+  box-sizing: border-box;
+}
+
+
+.hover-span {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s;
+  color: red;
+}
+
+.hover-span:hover {
+  color: #333;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-container {
+  width: 900px;
+  height: 350px;
+  margin: auto;
+  padding: 10;
+}
+
+.carousel-image {
+  max-width: 33%; /* Each image takes up one-third of the container width */
+  height: auto;
+}
+
+.paragraphs {
+  flex: 1;
+  padding: 20px;
+  color: rgb(122, 122, 122);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  color: rgb(153, 153, 153);
+  background-color: #f0f0f0;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  display: block;
+  line-height: 22px;
+  max-width: 1500px;
+  text-align: center;
+  background-color: #000;
+}
+
+.foot {
+  font-family:"Open Sans", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  transition: 0.7s;
+  font-weight: 400;
+}
+
+.foot:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+/* Add custom styles */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(235, 97, 97);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.5s;
+}
+
+.back-to-top:hover {
+  background-color: #fff;
+  transform: scale(.9);
+  color: #000;
+  text-decoration: none;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+
+
+
+
+
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  li {
+    display: block;
+    margin: 5px;
+  }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .subheading {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+/* Decrease space between columns */
+@media (min-width: 768px) {
+  .row {
+      /* margin-left: 0px; /* Half of the desired space */
+      /* margin-right: 0px; */ 
+      padding: 0;
+      margin: 0;
+  }
+  .col-md-6 {
+     padding: 0;
+     margin: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .carousel-container {
+      width: 100%; /* Full width on smaller screens */
+      height: auto;
+  }
+  
+  .carousel-image {
+      max-width: 100%; /* Each image takes full width on smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Media Query for Responsive Footer */
+@media screen and (max-width: 768px) {
+  .footer {
+    bottom: 0;
+    width: 100%;
+  }
+}
